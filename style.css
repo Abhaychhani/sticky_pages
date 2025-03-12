@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body,
+section{
+    width: 100%;
+    height: 100%;
+}
 section .pages{
     position: sticky;
     top:0;
@@ -43,4 +48,17 @@ section .pages{
 }
 .pages:nth-child(5){
     background-color:teal;
+}
+
+/* responsiveness css */
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 70%;
+    }
+}
+@media screen and (max-width:480px) {
+    html{
+        font-size: 45%;
+    }
 }
